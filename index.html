@@ -6,21 +6,28 @@
   <title>Baldur's Gate 3</title>
   <link rel="stylesheet" href="./src/style.css">
 </head>
-<body>
-    <header>
-        <div class="centradito">
-            <div id="logo" class="logo">
+<body class="bg-dark text-light">
+    <header class="w-100% flex justify-center p-4
+     text-xl font-serif uppercase font-bold">
+        <div class="w-[90%] my-100px mx-auto flex justify-around items-center gap-12">
+            <div id="logo" class="w-[200px] hover:scale-[1.2] ease-in-out transition-transform ">
                 <a href="#">
                     <img src="./public/img/logo.webp" alt="Baldur's Gate 3">
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="#companions">Companions</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#buynow" class="boton">Buy Now</a></li>
-                </ul>
+            <nav class="">
+                <details class="text-center">
+                    <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform">☰</summary>
+
+                    <ul class="flex flex-col lg:flex-row gap-4">
+                        <li><a href="#races" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Races</a></li>
+                        <li><a href="#classes" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Classes</a></li>
+                        <li><a href="#companions" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Companions</a></li>
+                        <li><a href="#news" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">News</a></li>
+                        <li class="mt-[14px] lg:mt-0 hover:scale-[1.2] transition-transform"><a href="#buynow" class="p-4 border-1 rounded-xl border-light hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
+                    </ul>
+                </details>
+                
             </nav>
         </div>
     </header>
@@ -41,7 +48,12 @@
             </div>
         </section>
         <!-- Sin estilos -->
-        <section class="">
+        <section id="races">
+            <div>
+                <h2>Choose Your Race</h2>
+            </div>
+        </section>
+        <section id="classes" class="">
           <div>
             <h2>Choose Your Class</h2>
             <div>
@@ -497,13 +509,13 @@
             </div>
           </div>
         </section>
-        <section id="calltopurchase">
+        <section id="buynow">
             <div>
                 <div>
                     <img src="./public/img/buy.png" alt="">
                 </div>
                 <div>
-                    <h2>Buy now</h2>
+                    <h2>Buy Now</h2>
                     <p>
                         Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.
                     </p>
