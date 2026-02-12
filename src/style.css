@@ -32,7 +32,8 @@ p + p {margin-top: 1lh;}
 ^ This messes up things, do not use*/
 
 nav details[open] {
-    summary {padding-bottom: 2rem;}
+    summary {
+        padding-bottom: 2rem;}
 }
 
 

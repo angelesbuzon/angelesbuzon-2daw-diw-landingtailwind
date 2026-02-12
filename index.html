@@ -7,19 +7,19 @@
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body class="bg-dark text-light text-xl font-sans">
-    <header class="w-[100%]  top-0 flex justify-center py-8
+    <header class="fixed w-[100%]  top-0 flex justify-center py-6
      text-xl font-serif uppercase font-bold
      bg-fixed">
         <div class="w-[80%] lg:w-[90%] my-100px mx-auto flex justify-between items-center gap-12">
-            <div id="logo" class="w-[200px] hover:scale-[1.2] ease-in-out transition-transform ">
+            <div id="logo" class="w-[200px] hover:scale-[1.2] ease-in-out transition-transform self-start shadow-mist rounded-[25%] bg-darkish">
                 <a href="#">
                     <img src="./public/img/logo.webp" alt="Baldur's Gate 3">
                 </a>
             </div>
-            <nav>
+            <nav class="shadow-mist rounded-[25%] bg-darkish">
                 <details class="text-center">
                     <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform">☰</summary>
-                    <ul class="flex flex-col gap-6 bg-dark">
+                    <ul class="flex flex-col gap-6 p-6 bg-dark rounded-4xl">
                         <li><a href="#races" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Races</a></li>
                         <li><a href="#classes" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Classes</a></li>
                         <li><a href="#companions" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Companions</a></li>
@@ -32,13 +32,13 @@
     </header>
     <main>
         <section id="banner" class="
-          min-h-[100vh] md:min-h-[100vh] lg:min-h-[80vh]
+          min-h-[100vh]
           flex justify-center items-center
           bg-fixed bg-cover
           ">
             <div class="
             flex flex-col justify-center gap-6
-            w-[80%] lg:w-[90%] min-h-[50vh]
+            w-[90%] md:w-fit min-h-[50vh]
             text-center
             shadow-mist rounded-[25%] bg-darkish
             ">
@@ -56,260 +56,518 @@
             </div>
         </section>
         <!-- Sin estilos -->
-        <section id="races">
-            <div>
-                <h2>Choose Your Race</h2>
+        <section id="races" class="
+          w-[100%]
+          flex justify-center
+          py-12
+        ">
+            <div class="
+            w-[80%] lg:w-[90%]
+            bg-amber-800">
+                <h2 class="font-serif text-6xl font-bold text-center">Choose Your Race</h2>
+                <p>En construcción</p>
             </div>
         </section>
-        <section id="classes" class="">
-          <div>
-            <h2>Choose Your Class</h2>
-            <div>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+        <section id="classes" class="w-[100%] flex justify-center py-12">
+          <div class="w-[80%] lg:w-[90%]">
+            <h2 class="font-serif text-6xl font-bold text-center pb-12">Choose Your Class</h2>
+            <div id="classes-grid" class="grid grid-cols-1 xl:grid-cols-2 gap-12">
+
+
+              <article id="barbarian" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/barbarian.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Barbarian</h3>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker" title="Berserker">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart" title="Wildheart">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic" title="Wild Magic">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant" title="Path of the Giant">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
               </article>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+
+              <article id="bard" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/bard.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Bard</h3>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Bards know music is more than idle fancy - it is power. Through study and adventure, these travelling troubadours master song, speech, and the magic within.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/bard_glamour.webp" alt="College of Glamour" title="College of Glamour">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/bard_lore.webp" alt="College of Lore" title="College of Lore">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/bard_valour.webp" alt="College of Valour" title="College of Valour">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/bard_swords.webp" alt="College of Swords" title="College of Swords">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
               </article>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+
+              <article id="cleric" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/cleric.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Cleric</h3>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Clerics are representatives of the gods they worship, wielding potent divine magic for good or ill.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_death.webp" alt="Death" title="Death">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_knowledge.webp" alt="Knowledge" title="Knowledge">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_life.webp" alt="Life" title="Life">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_light.webp" alt="Light" title="Light">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_nature.webp" alt="Nature" title="Nature">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_tempest.webp" alt="Tempest" title="Tempest">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_trickery.webp" alt="Trickery" title="Trickery">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/cleric_war.webp" alt="War" title="War">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
               </article>
-              <article>
-                <div>
-                  <!-- Símbolo de la clase -->
-                  <img src="./public/img/classes/barbarian.webp" alt="Barbarian icon">
+
+              <article id="druid" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/druid.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Druid</h3>
                 </div>
-                <h3>Barbarian</h3>
-                <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
-                <p>Subclasses:</p>
-                <ul>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_berserker.webp" alt="Berserker icon">
-                    </div>
-                    <h4>Berserker</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildheart.webp" alt="Wildheart icon">
-                    </div>
-                    <h4>Wildheart</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic icon">
-                    </div>
-                    <h4>Wild Magic</h4>
-                  </li>
-                  <li>
-                    <div>
-                      <img src="./public/img/classes/barbarian_giant.webp" alt="Path of the Giant icon">
-                    </div>
-                    <h4>Path of the Giant</h4>
-                  </li>
-                </ul>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Druids channel the elemental forces of nature and share a deep kinship with animals. Mastery of Wild Shape allows them to transform into beasts from all over the Realms.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/druid_land.webp" alt="Circle of the Land" title="Circle of the Land">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/druid_moon.webp" alt="Circle of the Moon" title="Circle of the Moon">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/druid_spore.webp" alt="Circle of the Spores" title="Circle of the Spores">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/druid_star.webp" alt="Circle of the Stars" title="Circle of the Stars">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </article>
+
+              <article id="fighter" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/fighter.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Fighter</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Fighters have mastered the art of combat, wielding weapons with unmatched skill and wearing armour like a second skin.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/fighter_archer.webp" alt="Arcane Archer" title="Arcane Archer">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/fighter_master.webp" alt="Battle Master" title="Battle Master">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/fighter_champion.webp" alt="Champion" title="Champion">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/fighter_eltritch.webp" alt="Eldritch Knight" title="Eldritch Knight">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="monk" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/monk.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Monk</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Some reach enlightenment by languid meditation - others do so in the heat of battle. Monks manipulate ki to empower their own strikes and debilitate their foes.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/monk_drunk.webp" alt="Way of the Drunken Master" title="Way of the Drunken Master">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/monk_fourelements.webp" alt="Way of the Four Elements" title="Way of the Four Elements">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/monk_openhand.webp" alt="Way of the Open Hand" title="Way of the Open Hand">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/monk_shadow.webp" alt="Way of the Shadow" title="Way of the Shadow">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="paladin" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/paladin.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Paladin</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>A promise made so deeply that it becomes divine in itself flows through a paladin, burning bright enough to inspire allies and smite foes.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/paladin_devotion.webp" alt="Oath of Devotion" title="Oath of Devotion">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/paladin_ancients.webp" alt="Oath of the Ancients" title="Oath of the Ancients">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/paladin_crown.webp" alt="Oath of the Crown" title="Oath of the Crown">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/paladin_vengeance.webp" alt="Oath of Vengeance" title="Oath of Vengeance">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/paladin_oathbreaker.webp" alt="Oathbreaker" title="Oathbreaker">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="ranger" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/ranger.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Ranger</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Rangers are unrivalled scouts and trackers, honing a deep connection with nature in order to hunt their favoured prey.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/ranger_beastmaster.webp" alt="Beast Master" title="Beast Master">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/ranger_gloom.webp" alt="Gloom Stalker" title="Gloom Stalker">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/ranger_hunter.webp" alt="Hunter" title="Hunter">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/ranger_swarmkeeper.webp" alt="Swarmkeeper" title="Swarmkeeper">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="rogue" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/rogue.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Rogue</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>With stealth, skill, and uncanny reflexes, rogues' versatility lets them get the upper hand in almost any situation.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/rogue_trickster.webp" alt="Arcane Trickster" title="Arcane Trickster">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/rogue_assassin.webp" alt="Assassin" title="Assassin">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/rogue_swashbuckler.webp" alt="Swashbuckler" title="Swashbuckler">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/rogue_thief.webp" alt="Thief" title="Thief">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="sorcerer" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/sorcerer.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Sorcerer</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Sorcerers are natural spellcasters, drawing on inherent magic from a gift or bloodline.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/sorcerer_draconic.webp" alt="Draconic Bloodline" title="Draconic Bloodline">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/sorcerer_shadow.webp" alt="Shadow Magic" title="Shadow Magic">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/sorcerer_storm.webp" alt="Storm Sorcery" title="Storm Sorcery">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/barbarian_wildmagic.webp" alt="Wild Magic" title="Wild Magic">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="warlock" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/warlock.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Warlock</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Bound by a pact to an all-powerful patron, warlocks trade their loyalty for supernatural abilities and unique magic.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/warlock_archfey.webp" alt="The Archfey" title="The Archfey">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/warlock_fiend.webp" alt="The Fiend" title="The Fiend">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/warlock_greatoldone.webp" alt="The Great Old One" title="The Great Old One">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/warlock_hex.webp" alt="The Hexblade" title="The Hexblade">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article id="wizard" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
+                <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
+                  <div class="flex justify-center items-center hover:rotate-25 hover:scale-[1.1] transition-transform ease-in-out"><img src="./public/img/classes/wizard.webp"></div>
+                  <h3 class="text-center font-serif font-bold text-5xl pb-4">Wizard</h3>
+                </div>
+                <div class="flex flex-col gap-6">
+                  <div>
+                    <p>Wizards master the arcane by specialising in individual schools of magic, combining ancient spells with modern research.</p>
+                  </div>
+                  <div>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_abjuration.webp" alt="Abjuration" title="Abjuration">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_bladesinging.webp" alt="Bladesinging" title="Bladesinging">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_conjuration.webp" alt="Conjuration" title="Conjuration">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_divination.webp" alt="Divination" title="Divination">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_enchantment.webp" alt="Enchantment" title="Enchantment">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_evocation.webp" alt="Evocation" title="Evocation">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_illusion.webp" alt="Illusion" title="Illusion">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_necromancy.webp" alt="Necromancy" title="Necromancy">
+                        </h4>
+                      </li>
+                      <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
+                        <h4>
+                          <img src="./public/img/classes/wizard_transmutation.webp" alt="Transmutation" title="Transmutation">
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
             </div>
           </div>
         </section>
