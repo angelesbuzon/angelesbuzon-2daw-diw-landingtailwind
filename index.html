@@ -6,45 +6,53 @@
   <title>Baldur's Gate 3</title>
   <link rel="stylesheet" href="./src/style.css">
 </head>
-<body class="bg-dark text-light">
-    <header class="w-100% flex justify-center p-4
-     text-xl font-serif uppercase font-bold">
-        <div class="w-[90%] my-100px mx-auto flex justify-around items-center gap-12">
+<body class="bg-dark text-light text-xl font-sans">
+    <header class="w-[100%]  top-0 flex justify-center py-8
+     text-xl font-serif uppercase font-bold
+     bg-fixed">
+        <div class="w-[80%] lg:w-[90%] my-100px mx-auto flex justify-between items-center gap-12">
             <div id="logo" class="w-[200px] hover:scale-[1.2] ease-in-out transition-transform ">
                 <a href="#">
                     <img src="./public/img/logo.webp" alt="Baldur's Gate 3">
                 </a>
             </div>
-            <nav class="">
+            <nav>
                 <details class="text-center">
                     <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform">☰</summary>
-
-                    <ul class="flex flex-col lg:flex-row gap-4">
+                    <ul class="flex flex-col gap-6 bg-dark">
                         <li><a href="#races" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Races</a></li>
                         <li><a href="#classes" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Classes</a></li>
                         <li><a href="#companions" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Companions</a></li>
                         <li><a href="#news" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">News</a></li>
-                        <li class="mt-[14px] lg:mt-0 hover:scale-[1.2] transition-transform"><a href="#buynow" class="p-4 border-1 rounded-xl border-light hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
+                        <li class="mt-[14px] lg:mt-0 hover:scale-[1.2] transition-transform"><a href="#buynow" class="p-4 hover:border-1 rounded-xl hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
                     </ul>
                 </details>
-                
             </nav>
         </div>
     </header>
     <main>
-        <section id="banner">
-            <div>
-                <h1>Baldur's Gate 3</h1>
-                <p class="subtitulo">Adventure awaits!</p>
-                <p>
-                    Gather your party and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.
-                    Mysterious abilities are awakening inside you, drawn from a mind flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.
-                </p>
-                <p>
-                    Forged with the new Divinity 4.0 engine,
-                    <i>Baldur’s Gate 3</i> gives you unprecedented freedom to explore, experiment, and interact with a thriving world filled with characters, dangers, and deceit. A grand, cinematic narrative brings you closer to your characters than ever before. From shadow-cursed forests, to the magical caverns of the Underdark, to the sprawling city of Baldur’s Gate itself, your actions define the adventure,
-                    but your choices define your legacy. You will be remembered.
-                </p>
+        <section id="banner" class="
+          min-h-[100vh] md:min-h-[100vh] lg:min-h-[80vh]
+          flex justify-center items-center
+          bg-fixed bg-cover
+          ">
+            <div class="
+            flex flex-col justify-center gap-6
+            w-[80%] lg:w-[90%] min-h-[50vh]
+            text-center
+            shadow-mist rounded-[25%] bg-darkish
+            ">
+                <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl font-bold capitalize text-shadow-lg/50 text-shadow-color-dark">Baldur's Gate&nbsp;3</h1>
+                <p class="font-serif text-3xl font-bold uppercase text-medium text-shadow-md/30">Adventure awaits!</p>
+                <div>
+                  <a href="#buynow" class="
+                    inline-block mt-[14px] lg:mt-0 p-4
+                    font-serif font-bold text-2xl uppercase
+                    border-1 border-light rounded-3xl
+                    transition-all ease-in-out
+                    hover:scale-[1.2] hover:border-1 hover:text-dark hover:border-medium hover:bg-medium
+                  ">Buy Now</a>
+                </div>
             </div>
         </section>
         <!-- Sin estilos -->

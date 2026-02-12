@@ -6,32 +6,51 @@
     --color-dark: #161616;
     --color-light: whitesmoke;
     --color-medium: burlywood;
+    --color-darkish: rgba(22, 22, 22, 0.6);
 
     --font-serif: 'Newsreader', Georgia, 'Times New Roman', Times, serif;
     --font-sans: 'Open Sans', sans-serif;
 
+    --shadow-mist: 0px 0px 50px 50px rgba(22, 22, 22, 0.6);
+
 }
 
 
 
 /* -------------------------------------
- * Some native CSS I allow myself to use
- * because it's way more efficient than
- * Tailwind classes for every friggin' HTML tag:
+ * Some native CSS I allowed myself to use
+ * because it's way more efficient than Tailwind classes for every friggin' HTML tag
+ * or because Tailwind does not include some things yet
  * ------------------------------------- */
 img {max-width: 100%;}
 
-p + p { margin-top: 1lh;}
+p + p {margin-top: 1lh;}
+
+/* h1, h2, h3, h4, h5, h6 {margin-bottom: 0.5lh} */
 
 /* a {color: inherit;}
 ^ This messes up things, do not use*/
 
-
-
-/* -------------------------------------
- * Not directly possible via Tailwind:
- * ------------------------------------- */
-
 nav details[open] {
-    summary {padding-bottom: 10px;}
+    summary {padding-bottom: 2rem;}
 }
+
+
+
+section#banner {
+    /* For some reason, the Tailwind code for background-image didn't work */
+    background-image: url('../public/img/banner.png');
+}
+
+/*
+               <p class="text-2xl text-shadow-md/30">
+                  Gather your party and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.
+                  Mysterious abilities are awakening inside you, drawn from a mind flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.
+                </p>
+                <p class="text-2xl text-shadow-md/30">
+                  Forged with the new Divinity 4.0 engine,
+                  <i>Baldur's Gate 3</i> gives you unprecedented freedom to explore, experiment, and interact with a thriving world filled with characters, dangers, and deceit. A grand, cinematic narrative brings you closer to your characters than ever before. From shadow-cursed forests, to the magical caverns of the Underdark, to the sprawling city of Baldur’s Gate itself, your actions define the adventure,
+                  but your choices define your legacy. You will be remembered.
+                </p>
+
+*/
