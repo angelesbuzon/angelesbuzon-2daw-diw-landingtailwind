@@ -24,18 +24,14 @@
                         <li><a href="#classes" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Classes</a></li>
                         <li><a href="#companions" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Companions</a></li>
                         <li><a href="#news" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">News</a></li>
-                        <li class="mt-[14px] lg:mt-0 hover:scale-[1.2] transition-transform"><a href="#buynow" class="p-4 hover:border-1 rounded-xl hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
+                        <li class="mt-[14px] lg:mt-0"><a href="#buynow" class="p-4 hover:border-1 rounded-xl hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
                     </ul>
                 </details>
             </nav>
         </div>
     </header>
     <main>
-        <section id="banner" class="
-          min-h-[100vh]
-          flex justify-center items-center
-          bg-fixed bg-cover
-          ">
+        <section id="banner" class="min-h-[100vh] flex justify-center items-center bg-fixed bg-cover">
             <div class="
             flex flex-col justify-center gap-6
             w-[90%] md:w-fit min-h-[50vh]
@@ -63,16 +59,173 @@
         ">
             <div class="
             w-[80%] lg:w-[90%]
-            bg-amber-800">
+            flex flex-col gap-12
+            ">
                 <h2 class="font-serif text-6xl font-bold text-center">Choose Your Race</h2>
-                <p>En construcción</p>
+                <div id="raceThumbnails" class="flex justify-center">
+                  <ul class="flex flex-wrap justify-center gap-6">
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/elf.webp" alt=""></div>
+                      <p>Elf</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/drow.webp" alt=""></div>
+                      <p>Drow</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
+                      <div><img src="./public/img/races/human.webp" alt=""></div>
+                      <p>Human</p>
+                    </li>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Trabajar en Elf de referencia -->
+                <div id="raceHuman" class="flex flex-col items-center p-8 border-1 rounded-2xl">
+                  <div class=""><img src="./public/img/races/human.webp" alt=""></div>
+                  <h3 class="activeRace font-serif font-bold text-center text-5xl
+                  after:block after:content[''] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4 after:mb-8
+                  ">Human</h3>
+                  <p>The most common face in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.</p>
+
+                </div>
+                <div id="raceElf" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                  <div class="flex flex-col items-center gap-6">
+                    <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/elf.webp" alt=""></div>
+                    <h3 class="activeRace font-serif font-bold text-center text-5xl
+                    after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                    ">Elf</h3>
+                    <p>With ethereal countenances and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.</p>
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                      <ul class="flex flex-wrap justify-center gap-2">
+                        <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                          <img src="./public/img/races/elf_highelf.webp" alt="High Elf" title="High Elf">
+                        </li>
+                        <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                          <img src="./public/img/races/elf_woodelf.webp" alt="Wood Elf" title="Wood Elf">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                    <ul class="flex flex-col justify-start gap-2">
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                      </li>
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/elvenweapontraining.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Elven Weapon Training</strong>: You have Proficiency with Longswords, Shortswords, Longbows, and Shortbows.</p>
+                      </li>
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
+                      </li>
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="raceDrow" class="flex flex-col justify-center items-center gap-6 p-8 border-1 rounded-2xl">
+                  <div class="flex flex-col items-center gap-6">
+                    <div><img src="./public/img/races/drow.webp" alt=""></div>
+                    <h3 class="activeRace font-serif font-bold text-center text-5xl
+                    after:block after:content[''] after:min-w-[200px] md:after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                    ">Drow</h3>
+                    <p>Driven to the Underdark, most drow have adopted a ruthless pragmatism. While the Lolth-sworn delight in the goddess' evil tenets, the Seldarine reject Her attempt to overthrow the leader of the elven pantheon.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                    <ul class="flex flex-wrap justify-center gap-2">
+                      <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                        <img src="./public/img/races/drow_lolthsworn.webp" alt="Lolth-Sworn Drow" title="Lolth-Sworn Drow">
+                      </li>
+                      <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                        <img src="./public/img/races/drow_seldarine.webp" alt="Seldarine Drow" title="Seldarine Drow">
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                    <ul class="flex flex-col justify-start gap-2">
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                      </li>
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/drowweapontraining.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Drow Weapon Training</strong>: You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.</p>
+                      </li>
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/superiordarkvision.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Superior Darkvision</strong>: You can see in the dark up to 24m.</p>
+                      </li>
+                      <li class="flex items-center gap-4">
+                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                          <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
+                        </div>
+                        <p class="text-sm"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </div>
         </section>
         <section id="classes" class="w-[100%] flex justify-center py-12">
           <div class="w-[80%] lg:w-[90%]">
             <h2 class="font-serif text-6xl font-bold text-center pb-12">Choose Your Class</h2>
             <div id="classes-grid" class="grid grid-cols-1 xl:grid-cols-2 gap-12">
-
 
               <article id="barbarian" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
                 <div class="flex flex-col justify-start xl:justify-center items-center gap-6 ">
@@ -84,7 +237,7 @@
                     <p>The strong embrace the wild that hides inside – keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -121,7 +274,7 @@
                     <p>Bards know music is more than idle fancy - it is power. Through study and adventure, these travelling troubadours master song, speech, and the magic within.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -158,7 +311,7 @@
                     <p>Clerics are representatives of the gods they worship, wielding potent divine magic for good or ill.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -215,7 +368,7 @@
                     <p>Druids channel the elemental forces of nature and share a deep kinship with animals. Mastery of Wild Shape allows them to transform into beasts from all over the Realms.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -252,7 +405,7 @@
                     <p>Fighters have mastered the art of combat, wielding weapons with unmatched skill and wearing armour like a second skin.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -289,7 +442,7 @@
                     <p>Some reach enlightenment by languid meditation - others do so in the heat of battle. Monks manipulate ki to empower their own strikes and debilitate their foes.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -326,7 +479,7 @@
                     <p>A promise made so deeply that it becomes divine in itself flows through a paladin, burning bright enough to inspire allies and smite foes.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -368,7 +521,7 @@
                     <p>Rangers are unrivalled scouts and trackers, honing a deep connection with nature in order to hunt their favoured prey.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -405,7 +558,7 @@
                     <p>With stealth, skill, and uncanny reflexes, rogues' versatility lets them get the upper hand in almost any situation.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -442,7 +595,7 @@
                     <p>Sorcerers are natural spellcasters, drawing on inherent magic from a gift or bloodline.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -479,7 +632,7 @@
                     <p>Bound by a pact to an all-powerful patron, warlocks trade their loyalty for supernatural abilities and unique magic.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -516,7 +669,7 @@
                     <p>Wizards master the arcane by specialising in individual schools of magic, combining ancient spells with modern research.</p>
                   </div>
                   <div>
-                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses:</p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subclasses</p>
                     <ul class="flex flex-wrap justify-center gap-2">
                       <li class="flex items-center gap-4 hover:-rotate-25 transition-transform ease-in-out">
                         <h4>
@@ -572,7 +725,7 @@
           </div>
         </section>
         <section id="companions">
-            <div class="centradito">
+            <div>
                 <h2>Choose Your Companion</h2>
                 <div id="comp-grid">
                     <!-- Seis compañeros -->
@@ -658,11 +811,11 @@
             </div>
         </section>
         <section id="news">
-            <div class="centradito">
+            <div>
                 <h2>News</h2>
                 <div id="grid-noticias">
                     <article>
-                        <div class="centradito">
+                        <div>
                             <time datetime="07/08/2025">August 7, 2025</time>
                             <h3>Community Update #35: Baldur's Gate 3 Turns Two</h3>
                             <p>Happy birthday, gang!  Baldur's Gate 3 turns two - hard to believe, isn't it?</p>
@@ -670,7 +823,7 @@
                         </div>
                     </article>
                     <article>
-                        <div class="centradito">
+                        <div>
                             <time datetime="31/07/2025">July 31, 2025</time>
                             <h3>Room Temperature Fix #33 Now Live!</h3>
                             <p>Hotfix #33 is rolling out across all platforms.</p>
@@ -678,7 +831,7 @@
                         </div>
                     </article>
                     <article>
-                        <div class="centradito">
+                        <div>
                             <time datetime="20/05/2025">May 20, 2025</time>
                             <h3>Community Update #34 - Connecting With Cross-Play & Hotfix #32</h3>
                             <p>While we're fixing a few final things, let's get you set up with Patch 8!</p>
@@ -686,7 +839,7 @@
                         </div>
                     </article>
                     <article>
-                        <div class="centradito">
+                        <div>
                             <time datetime="14/05/2025">May 14, 2025</time>
                             <h3>Hotfix #31 Now Live!</h3>
                             <p>Hotfix #31 is now going live! It  aims to tackle the kaleidoscope of colours that appear when changing locations, as well as various other bugs that have made their way into the game.</p>
@@ -813,7 +966,7 @@
             </div>
         </section>
     </main>
-    <footer class="centradito">
+    <footer>
         <div id="disclaimers">
             <p>
                 <a href="">Privacy Policy</a> | <a href="">Fan Content Policy</a> | <a href="">Cookie Settings</a>
