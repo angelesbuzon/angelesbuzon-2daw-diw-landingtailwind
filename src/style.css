@@ -8,6 +8,13 @@
     --color-medium: burlywood;
     --color-darkish: rgba(22, 22, 22, 0.6);
 
+    --color-astarion: rgba(117, 42, 42, 0.2);
+    --color-gale: rgba(42, 52, 117, 0.2);
+    --color-laezel: rgba(117, 97, 42, 0.2);
+    --color-shadowheart: rgba(81, 42, 117, 0.2);
+    --color-wyll: rgba(42, 117, 62, 0.2);
+    --color-karlach: rgba(117, 68, 42, 0.2);
+
     --font-serif: 'Newsreader', Georgia, 'Times New Roman', Times, serif;
     --font-sans: 'Open Sans', sans-serif;
 
@@ -29,6 +36,8 @@ p + p {margin-top: 1lh;}
 
 nav details[open] {
     summary {padding-bottom: 2rem;}
+
+    color: rgb(117, 68, 42);
 }
 
 #raceThumbnails img {
@@ -51,6 +60,14 @@ nav details[open] {
 section#banner {
     /* For some reason, the Tailwind code for background-image didn't work */
     background-image: url('../public/img/banner.png');
+}
+
+section#companions {
+    & > div:nth-child(even):not(:first-of-type) {
+        div[id*='-narrative'] > div:has(img) {
+            order: 2;
+        }
+    }
 }
 
 /*
