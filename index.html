@@ -18,13 +18,13 @@
             </div>
             <nav class="rounded-xl p-2 bg-dark">
                 <details class="text-center">
-                    <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform pt-0 pl-2 pr-2 pb-2 text-shadow-md/30">☰</summary>
+                    <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform pt-2 pl-2 pr-2 pb-2 text-shadow-md/30">☰</summary>
                     <ul class="flex flex-col gap-6 p-6">
                         <li><a href="#races" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Races</a></li>
                         <li><a href="#classes" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Classes</a></li>
                         <li><a href="#companions" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Companions</a></li>
                         <li><a href="#news" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">News</a></li>
-                        <li class="mt-[14px]"><a href="#buynow" class="p-4 hover:border-1 rounded-xl hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
+                        <li><a href="#buynow" class="p-4 hover:border-1 rounded-xl hover:text-dark hover:border-medium hover:bg-medium ease-in-out transition-colors">Buy Now</a></li>
                     </ul>
                 </details>
             </nav>
@@ -32,13 +32,12 @@
     </header>
     <main>
         <section id="banner" class="min-h-[100vh] flex justify-center items-center bg-fixed bg-cover">
-            <div class="
+            <div class="mx-2
             flex flex-col justify-center gap-6
-            w-[90%] md:w-fit min-h-[50vh]
             text-center
             shadow-mist rounded-[25%] bg-darkish
             ">
-                <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl font-bold capitalize text-shadow-lg/20 text-shadow-color-dark">Baldur's Gate&nbsp;3</h1>
+                <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl font-bold text-shadow-lg/20 text-shadow-color-dark">Baldur's Gate&nbsp;3</h1>
                 <p class="font-serif text-3xl font-bold uppercase text-medium">Adventure awaits!</p>
                 <div>
                   <a href="#buynow" class="
@@ -51,9 +50,29 @@
                 </div>
             </div>
         </section>
-        <section id="races" class="w-[100%] flex justify-center py-12">
+        <section id="custom" class="min-h-[80vh] w-[100%] flex justify-center items-center py-24">
+          <div class="w-[80%] lg:w-[90%]flex flex-col justify-center items-center">
+            <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+            before:block before:content[''] before:min-w-[150px] before:w-[50%] before:h-[3px] before:m-auto before:mb-8 before:bg-light
+            after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
+            text-shadow-md/30">Choose Your Story</h2>
+            <div class="text-2xl text-shadow-md/30">
+              <p>
+                  Gather your party and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.
+                  Mysterious abilities are awakening inside you, drawn from a mind flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.
+              </p>
+              <p>
+                Forged with the new Divinity 4.0 engine,
+                <i>Baldur's Gate 3</i> gives you unprecedented freedom to explore, experiment, and interact with a thriving world filled with characters, dangers, and deceit. A grand, cinematic narrative brings you closer to your characters than ever before. From shadow-cursed forests, to the magical caverns of the Underdark, to the sprawling city of Baldur’s Gate itself, your actions define the adventure,
+                but your choices define your legacy. You will be remembered.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="races" class="w-[100%] flex justify-center py-24">
             <div class="w-[80%] lg:w-[90%] flex flex-col gap-12">
-                <h2 class="font-serif text-6xl font-bold text-center">Choose Your Race</h2>
+                <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+                ">Choose Your Race</h2>
                 <ul id="raceThumbnails" class="flex flex-wrap justify-center gap-6">
                   <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
                     <img id="raceThumbHuman" class="activeRaceThumb drop-shadow-cyan-500/50" src="./public/img/races/human.webp" alt="Human" title="Human">
@@ -613,7 +632,8 @@
         </section>
         <section id="classes" class="w-[100%] flex justify-center py-12">
           <div class="w-[80%] lg:w-[90%]">
-            <h2 class="font-serif text-6xl font-bold text-center pb-12">Choose Your Class</h2>
+            <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+            ">Choose Your Class</h2>
             <div id="classes-grid" class="grid grid-cols-1 xl:grid-cols-2 gap-12">
 
               <article id="barbarian" class="grid grid-cols-1 2xl:grid-cols-2 gap-6 p-8 border-1 rounded-2xl">
@@ -1113,9 +1133,15 @@
             </div>
           </div>
         </section>
-        <section id="companions" class="w-[100%] flex flex-col items-center py-12">
-            <div class="w-[80%] lg:w-[90%]">
-                <h2 class="font-serif text-6xl font-bold text-center">Choose Your Companions</h2>
+        <section id="companions" class="w-[100%] flex flex-col items-center">
+            <div class="w-[80%] min-h-[80vh] lg:w-[90%] flex flex-col justify-center items-center py-24">
+              <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+              before:block before:content[''] before:min-w-[150px] before:w-[50%] before:h-[3px] before:m-auto before:mb-8 before:bg-light
+              after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
+              text-shadow-md/30">Choose Your Companions</h2>
+              <p class="text-2xl">
+                Companions are playable characters who can join and fight alongside the player character. Each has their own motivations, personality, and approval, which increases or decreases according to choices made throughout the game. At high approval levels, many companions can be romanced. Conversely, a companion may leave the party or even try to kill the player character if their approval becomes too low. 
+              </p>
             </div>
 
             <div id="astarion" class="bg-astarion flex flex-col items-center">
@@ -1127,8 +1153,8 @@
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
                     <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-2">Vampire Spawn</p>
-                    <h3 class="font-serif font-bold text-center text-8xl mb-8
-                          after:block after:content[''] after:min-w-[200px] after:w-[50%] after:h-[2px] after:m-auto after:bg-light after:mt-4
+                    <h3 class="font-serif font-bold text-center text-5xl md:text-6xl lg:text-8xl mb-8
+                          after:block after:content[''] after:min-w-[150px] after:w-[20%] after:h-[3px] after:m-auto after:bg-medium after:mt-4
                           ">Astarion</h3>
                     <div class="text-lg">
                       <p>
@@ -1194,8 +1220,8 @@
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
                     <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-2">Wizard Prodigy</p>
-                    <h3 class="font-serif font-bold text-center text-8xl mb-8
-                          after:block after:content[''] after:min-w-[100px] after:w-[50%] after:h-[2px] after:m-auto after:bg-light after:mt-4
+                    <h3 class="font-serif font-bold text-center text-5xl md:text-6xl lg:text-8xl mb-8
+                          after:block after:content[''] after:min-w-[150px] after:w-[20%] after:h-[3px] after:m-auto after:bg-medium after:mt-4
                           ">Gale</h3>
                     <div class="text-lg">
                       <p>
@@ -1255,8 +1281,8 @@
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
                     <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-2">Ferocious Warrior</p>
-                    <h3 class="font-serif font-bold text-center text-8xl mb-8
-                          after:block after:content[''] after:min-w-[100px] after:w-[50%] after:h-[2px] after:m-auto after:bg-light after:mt-4
+                    <h3 class="font-serif font-bold text-center text-5xl md:text-6xl lg:text-8xl mb-8
+                          after:block after:content[''] after:min-w-[150px] after:w-[10%] after:h-[3px] after:m-auto after:bg-medium after:mt-4
                           ">Lae'zel</h3>
                     <div class="text-lg">
                       <p>
@@ -1313,8 +1339,8 @@
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
                     <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-2">Loyal Warrior</p>
-                    <h3 class="font-serif font-bold text-center text-8xl mb-8
-                          after:block after:content[''] after:min-w-[100px] after:w-[50%] after:h-[2px] after:m-auto after:bg-light after:mt-4
+                    <h3 class="font-serif font-bold text-center text-5xl md:text-6xl lg:text-8xl mb-8
+                          after:block after:content[''] after:min-w-[150px] after:w-[10%] after:h-[3px] after:m-auto after:bg-medium after:mt-4
                           ">Shadowheart</h3>
                     <div class="text-lg">
                       <p>A devoted cleric of Shar, goddess of darkness and loss, Shadowheart agreed to have her memories wiped as part of a holy mission. </p>
@@ -1376,8 +1402,8 @@
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
                     <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-2">Living Legend</p>
-                    <h3 class="font-serif font-bold text-center text-8xl mb-8
-                          after:block after:content[''] after:min-w-[100px] after:w-[50%] after:h-[2px] after:m-auto after:bg-light after:mt-4
+                    <h3 class="font-serif font-bold text-center text-5xl md:text-6xl lg:text-8xl mb-8
+                          after:block after:content[''] after:min-w-[150px] after:w-[10%] after:h-[3px] after:m-auto after:bg-medium after:mt-4
                           ">Wyll</h3>
                     <div class="text-lg">
                       <p>From a scion of a famed Baldurian house to a life of adventure on the road, Wyll’s life as the monster hunter called the Blade of Frontiers has made him one of the beating hearts of the Sword Coast.</p>
@@ -1433,8 +1459,8 @@
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
                     <p class="font-serif text-2xl font-bold uppercase text-medium text-center pb-2">Fury of Avernus</p>
-                    <h3 class="font-serif font-bold text-center text-8xl mb-8
-                          after:block after:content[''] after:min-w-[100px] after:w-[50%] after:h-[2px] after:m-auto after:bg-light after:mt-4
+                    <h3 class="font-serif font-bold text-center text-5xl md:text-6xl lg:text-8xl mb-8
+                          after:block after:content[''] after:min-w-[150px] after:w-[10%] after:h-[3px] after:m-auto after:bg-medium after:mt-4
                           ">Karlach</h3>
                     <div class="text-lg">
                       <p>Fresh-escaped from Hell, Karlach is finally free of the archdevil Zariel – but not from the infernal engine Zariel planted in her chest. With her first taste of freedom in ten years, Karlach is eager to find a fix for the engine that's burning hotter and hotter before it burns her out completely. But even more premier in her mind? Exploring, finding like-minded travellers, falling in love (or lust)... and taking revenge on the man who sold her to Zariel all those years ago.</p>
@@ -1487,59 +1513,81 @@
             </div>
 
         </section>
-        <section id="news">
-            <div>
-                <h2>News</h2>
-                <div id="grid-noticias">
-                    <article>
+        <section id="news" class="w-[100%] flex flex-col items-center py-24">
+            <div class="w-[80%] lg:w-[90%]">
+                <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+                after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
+                text-shadow-md/30">News</h2>
+                <div id="news-grid" class="grid grid-cols-1 xl:grid-cols-2 gap-12">
+                    <article class="min-h-[250px] flex flex-col justify-center gap-4 p-8 border-1 border-light rounded-2xl text-center">
+                        <time datetime="07/08/2025" class="font-bold text-medium text-sm uppercase block">August 7, 2025</time>
+                        <h3 class="font-serif font-bold text-4xl">Community Update #35: Baldur's Gate 3 Turns Two</h3>
+                        <p>Happy birthday, gang!  Baldur's Gate 3 turns two - hard to believe, isn't it?</p>
                         <div>
-                            <time datetime="07/08/2025">August 7, 2025</time>
-                            <h3>Community Update #35: Baldur's Gate 3 Turns Two</h3>
-                            <p>Happy birthday, gang!  Baldur's Gate 3 turns two - hard to believe, isn't it?</p>
-                            <a href="" class="boton">Read More</a>
+                          <a href="" class="inline-block mt-[14px] p-4
+                          font-serif font-bold uppercase
+                          border-1 border-light rounded-2xl
+                          transition-all ease-in-out
+                          hover:border-1 hover:text-dark hover:border-medium hover:bg-medium">Read More</a>
                         </div>
                     </article>
-                    <article>
+
+                    <article class="min-h-[250px] flex flex-col justify-center gap-4 p-8 border-1 border-light rounded-2xl text-center">
+                        <time class="font-bold text-medium text-sm uppercase block" datetime="31/07/2025">July 31, 2025</time>
+                        <h3 class="font-serif font-bold text-4xl">Room Temperature Fix #33 Now Live!</h3>
+                        <p>Hotfix #33 is rolling out across all platforms.</p>
                         <div>
-                            <time datetime="31/07/2025">July 31, 2025</time>
-                            <h3>Room Temperature Fix #33 Now Live!</h3>
-                            <p>Hotfix #33 is rolling out across all platforms.</p>
-                            <a href="" class="boton">Read More</a>
+                          <a href="" class="inline-block mt-[14px] p-4
+                          font-serif font-bold uppercase
+                          border-1 border-light rounded-2xl
+                          transition-all ease-in-out
+                          hover:border-1 hover:text-dark hover:border-medium hover:bg-medium">Read More</a>
                         </div>
                     </article>
-                    <article>
+
+                    <article class="min-h-[250px] flex flex-col justify-center gap-4 p-8 border-1 border-light rounded-2xl text-center">
+                        <time class="font-bold text-medium text-sm uppercase block" datetime="20/05/2025">May 20, 2025</time>
+                        <h3 class="font-serif font-bold text-4xl">Community Update #34 - Connecting With Cross-Play & Hotfix #32</h3>
+                        <p>While we're fixing a few final things, let's get you set up with Patch 8!</p>
                         <div>
-                            <time datetime="20/05/2025">May 20, 2025</time>
-                            <h3>Community Update #34 - Connecting With Cross-Play & Hotfix #32</h3>
-                            <p>While we're fixing a few final things, let's get you set up with Patch 8!</p>
-                            <a href="" class="boton">Read More</a>
+                          <a href="" class="inline-block mt-[14px] p-4
+                          font-serif font-bold uppercase
+                          border-1 border-light rounded-2xl
+                          transition-all ease-in-out
+                          hover:border-1 hover:text-dark hover:border-medium hover:bg-medium">Read More</a>
                         </div>
                     </article>
-                    <article>
+
+                    <article class="min-h-[250px] flex flex-col justify-center gap-4 p-8 border-1 border-light rounded-2xl text-center">
+                        <time class="font-bold text-medium text-sm uppercase block" datetime="20/05/2025">May 20, 2025</time>
+                        <h3 class="font-serif font-bold text-4xl">Hotfix #31 Now Live!</h3>
+                        <p>Hotfix #31 is now going live! It  aims to tackle the kaleidoscope of colours that appear when changing locations, as well as various other bugs that have made their way into the game.</p>
                         <div>
-                            <time datetime="14/05/2025">May 14, 2025</time>
-                            <h3>Hotfix #31 Now Live!</h3>
-                            <p>Hotfix #31 is now going live! It  aims to tackle the kaleidoscope of colours that appear when changing locations, as well as various other bugs that have made their way into the game.</p>
-                            <a href="" class="boton">Read More</a>
+                          <a href="" class="inline-block mt-[14px] p-4
+                          font-serif font-bold uppercase
+                          border-1 border-light rounded-2xl
+                          transition-all ease-in-out
+                          hover:border-1 hover:text-dark hover:border-medium hover:bg-medium">Read More</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Sin estilos -->
-        <section id="faq">
-          <div>
-            <h2>FAQ</h2>
-            <div>
-              <details>
-                <summary>What platforms is Baldur's Gate 3 available on?</summary>
-                <p>The game is currently available on PC (Steam and GOG), PlayStation 5, Xbox, Mac and GeForce NOW.</p>
+        <section id="faq" class="w-[100%] flex flex-col items-center py-24">
+          <div class="w-[80%] lg:w-[90%]">
+            <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+            after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
+            text-shadow-md/30">FAQ</h2>
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">What platforms is Baldur's Gate 3 available on?</summary>
+                <p class="mt-4">The game is currently available on PC (Steam and GOG), PlayStation 5, Xbox, Mac and GeForce NOW.</p>
               </details>
-              <details>
-                <summary>What are the PC system requirements?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">What are the PC system requirements?</summary>
                 <p><strong>Minimum:</strong></p>
-                <ul>
+                <ul class="list-inside list-disc">
                   <li>Requires a 64-bit processor and operating system.</li>
                   <li>OS: Windows 10 64-bit</li>
                   <li>Processor: Intel I5 4690 / AMD FX 8350</li>
@@ -1549,7 +1597,7 @@
                   <li>Storage: 150 GB available space</li>
                 </ul>
                 <p><strong>Recommended:</strong></p>
-                <ul>
+                <ul class="list-inside list-disc">
                   <li>Requires a 64-bit processor and operating system.</li>
                   <li>OS: Windows 10 64-bit</li>
                   <li>Processor: Intel i7 8700K / AMD r5 3600</li>
@@ -1560,10 +1608,10 @@
                 </ul>
                 <p>Make sure your device meets these specifications to ensure smooth gameplay.</p>
               </details>
-              <details>
-                <summary>What are the Mac system requirements?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">What are the Mac system requirements?</summary>
                 <p><strong>Minimum:</strong></p>
-                <ul>
+                <ul class="list-inside list-disc">
                   <li>OS: macOS 12 or newer</li>
                   <li>Processor: Apple M1</li>
                   <li>Memory: 8 GB RAM</li>
@@ -1572,7 +1620,7 @@
                   <li>Storage: 150 GB available space</li>
                 </ul>
                 <p><strong>Recommended:</strong></p>
-                <ul>
+                <ul class="list-inside list-disc">
                   <li>OS: Latest macOS</li>
                   <li>Processor: Apple M1 Pro or better</li>
                   <li>Memory: 16 GB RAM</li>
@@ -1582,24 +1630,24 @@
                 </ul>
                 <p>Make sure your device meets these specifications to ensure smooth gameplay.</p>
               </details>
-              <details>
-                <summary>Are there any in-game purchases?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">Are there any in-game purchases?</summary>
                 <p>No, there are no in-game purchases in our game. We believe in providing a complete and immersive gaming experience without the need for additional purchases. Enjoy the game to its fullest without any additional costs or microtransactions.</p>
               </details>
-              <details>
-                <summary>Can I play a single-player campaign?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">Can I play a single-player campaign?</summary>
                 <p>Absolutely! The game features an engaging single-player campaign filled with immersive storytelling and exciting missions. Experience the game's unique narrative as you embark on a solo adventure.</p>
                 </details>
-              <details>
-                <summary>Can I play the game offline?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">Can I play the game offline?</summary>
                 <p>Yes, you can play the game offline. However, certain features, such as multiplayer, may require an internet connection.</p>
               </details>
-              <details>
-                <summary>Is there a multiplayer mode?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">Is there a multiplayer mode?</summary>
                 <p>Yes, the game offers a multiplayer mode that focuses on cooperative gameplay. You can team up with your friends or other players online and embark on exciting co-op adventures, tackle challenging quests together, and strategise as a team to overcome formidable foes. Experience the game's immersive world in a collaborative multiplayer setting.</p>
               </details>
-              <details>
-                <summary>What does the Digital Deluxe Edition include?</summary>
+              <details class="border-1 border-light rounded-2xl p-8 bg-dark">
+                <summary class="font-serif font-bold uppercase text-medium">What does the Digital Deluxe Edition include?</summary>
                 <p>The Digital Deluxe Edition includes all the content from the standard edition, along with additional exclusive items. These items include the Divinity Bard Song Pack, Exclusive Dice Skin, Mask of the Shapeshifter, Cape of the Red Prince, Lute of the Merryweather Bard, Needle of the Outlaw Rogue, Bicorne of the Sea Beast, Paintings from Rivellon, Adventurer's Pouch, Digital OST (Original Soundtrack), Digital Artbook, and Digital Character Sheets. Immerse yourself fully in the game with these exciting digital bonuses available in the Digital Deluxe Edition.</p>
               </details>
             </div>

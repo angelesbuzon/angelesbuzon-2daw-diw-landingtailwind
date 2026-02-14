@@ -8,6 +8,7 @@
     --color-medium: burlywood;
     --color-darkish: rgba(22, 22, 22, 0.6);
 
+    /* Legacy, for reference: */
     --color-astarion: rgba(117, 42, 42, 0.2);
     --color-gale: rgba(42, 52, 117, 0.2);
     --color-laezel: rgba(117, 97, 42, 0.2);
@@ -30,35 +31,109 @@
  * because it's way more efficient than Tailwind classes for every friggin' HTML tag
  * or because Tailwind does not include some things yet
  * ------------------------------------- */
+
 img {max-width: 100%;}
 
-p + p {margin-top: 1lh;}
-
-nav details[open] {
-}
-
-#raceThumbnails img {
-    opacity: 0.5;
-
-    &.activeRaceThumb {
-        opacity: 1;
-    }
-}
-
-#raceInfos article {
-    display: none;
-
-    &.activeRaceInfo {
-        display: grid;
-    }
-}
-
+p + p, ul + ul, ul + p {margin-top: 1lh;}
 
 section#banner {
     /* For some reason, the Tailwind code for background-image didn't work */
     background-image: url('../public/img/banner.png');
 }
 
+section#custom {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../public/img/play2.jpg')
+    ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section#races {
+    #raceThumbnails img {
+        opacity: 0.5;
+
+        &.activeRaceThumb {
+            opacity: 1;
+        }
+    }
+
+    #raceInfos article {
+        display: none;
+
+        &.activeRaceInfo {
+            display: grid;
+        }
+    }
+}
+
+section#companions {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../public/img/companions.jpg')
+    ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+
+    & > div {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+
+        &#astarion {
+            background-image:
+                linear-gradient(rgba(64, 19, 19, 0.8), rgba(64, 19, 19, 0.8)),
+                url('../public/img/characters/astarion_bg.jpg')
+            ;
+            background-position: right;
+        }
+
+        &#gale {
+            background-image:
+                linear-gradient(rgba(19, 35, 61, 0.8), rgba(19, 35, 61, 0.8)),
+                url('../public/img/characters/gale_bg.jpg')
+            ;
+            background-position: right;
+        }
+
+        &#laezel {
+            background-image:
+                linear-gradient(rgba(73, 60, 22, 0.8), rgba(73, 60, 22, 0.8)),
+                url('../public/img/characters/laezel_bg.jpg')
+            ;
+        }
+
+        &#shadowheart {
+            background-image:
+                linear-gradient(rgba(46, 22, 68, 0.8), rgba(46, 22, 68, 0.8)),
+                url('../public/img/characters/shadowheart_bg.jpg')
+            ;
+            background-position: right;
+        }
+
+        &#wyll {
+            background-image:
+                linear-gradient(rgba(11, 45, 21, 0.8), rgba(11, 45, 21, 0.8)),
+                url('../public/img/characters/wyll_bg.jpg')
+            ;
+            background-position: right;
+        }
+
+        &#karlach {
+            background-image:
+                linear-gradient(rgba(73, 32, 20, 0.8), rgba(73, 32, 20, 0.8)),
+                url('../public/img/characters/karlach_bg.jpg')
+            ;
+            background-position: right;
+        }
+    }
+
+    
+}
 
 /* Tailwind >= lg: */
 @media (width >= 64rem) {
@@ -69,6 +144,33 @@ section#banner {
             }
         }
     }
+}
+
+section#news {
+    article {
+        background-size: cover;
+        background-position: center;
+
+        &:first-of-type {
+            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/news1.webp');
+        }
+
+        &:nth-of-type(2) {
+            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public//img/news2.jpg');
+        }
+
+        &:nth-of-type(3) {
+            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public//img/news3.jpg');
+        }
+
+        &:nth-of-type(4) {
+            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public//img/news4.webp');
+        }
+    }
+}
+
+section#faq details[open] {
+    summary {margin-bottom:2rem;}
 }
 
 /*
