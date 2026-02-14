@@ -59,10 +59,14 @@ section#banner {
     background-image: url('../public/img/banner.png');
 }
 
-section#companions {
-    & > div:nth-child(even):not(:first-of-type) {
-        div[id*='-narrative'] > div:has(img) {
-            order: 2;
+
+/* Tailwind >= lg: */
+@media (width >= 64rem) {
+    section#companions {
+        & > div:nth-child(even):not(:first-of-type) {
+            div[id*='-narrative'] > div:has(img) {
+                order: 2;
+            }
         }
     }
 }
