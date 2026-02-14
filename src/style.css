@@ -35,9 +35,6 @@ img {max-width: 100%;}
 p + p {margin-top: 1lh;}
 
 nav details[open] {
-    summary {padding-bottom: 2rem;}
-
-    color: rgb(117, 68, 42);
 }
 
 #raceThumbnails img {
