@@ -51,174 +51,563 @@
                 </div>
             </div>
         </section>
-        <!-- Sin estilos -->
-        <section id="races" class="
-          w-[100%]
-          flex justify-center
-          py-12
-        ">
-            <div class="
-            w-[80%] lg:w-[90%]
-            flex flex-col gap-12
-            ">
+        <section id="races" class="w-[100%] flex justify-center py-12">
+            <div class="w-[80%] lg:w-[90%] flex flex-col gap-12">
                 <h2 class="font-serif text-6xl font-bold text-center">Choose Your Race</h2>
-                <div id="raceThumbnails" class="flex justify-center">
-                  <ul class="flex flex-wrap justify-center gap-6">
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                  <ul id="raceThumbnails" class="flex flex-wrap justify-center gap-6">
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbHuman" class="activeRaceThumb drop-shadow-cyan-500/50" src="./public/img/races/human.webp" alt="Human" title="Human">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/elf.webp" alt=""></div>
-                      <p>Elf</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbElf" src="./public/img/races/elf.webp" alt="Elf" title="Elf">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/drow.webp" alt=""></div>
-                      <p>Drow</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbDrow" src="./public/img/races/drow.webp" alt="Drow" title="Drow">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbHalfElf" src="./public/img/races/halfelf.webp" alt="Half-Elf" title="Half-Elf">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbHalfOrc" src="./public/img/races/halforc.webp" alt="Half-Orc" title="Half-Orc">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbHalfling" src="./public/img/races/halfling.webp" alt="Halfling" title="Halfling">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbDwarf" src="./public/img/races/dwarf.webp" alt="Dwarf" title="Dwarf">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbGnome" src="./public/img/races/gnome.webp" alt="Gnome" title="Gnome">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbTiefling" src="./public/img/races/tiefling.webp" alt="Tiefling" title="Tiefling">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbGithyanki" src="./public/img/races/githyanki.webp" alt="Githyanki" title="Githyanki">
                     </li>
-                    <li class="max-w-[10%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-transform ease-in-out">
-                      <div><img src="./public/img/races/human.webp" alt=""></div>
-                      <p>Human</p>
-                    </li>
+                    <li class="max-w-[20%] flex flex-col items-center cursor-pointer font-bold lg:text-2xl hover:scale-[1.2] transition-all ease-in-out">
+                      <img id="raceThumbDragonborn" src="./public/img/races/dragonborn.webp" alt="Dragonborn" title="Dragonborn">
                     </li>
                   </ul>
-                </div>
-                <!-- Trabajar en Elf de referencia -->
-                <div id="raceHuman" class="flex flex-col items-center p-8 border-1 rounded-2xl">
-                  <div class=""><img src="./public/img/races/human.webp" alt=""></div>
-                  <h3 class="activeRace font-serif font-bold text-center text-5xl
-                  after:block after:content[''] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4 after:mb-8
-                  ">Human</h3>
-                  <p>The most common face in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.</p>
-
-                </div>
-                <div id="raceElf" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
-                  <div class="flex flex-col items-center gap-6">
-                    <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/elf.webp" alt=""></div>
-                    <h3 class="activeRace font-serif font-bold text-center text-5xl
-                    after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
-                    ">Elf</h3>
-                    <p>With ethereal countenances and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.</p>
+                <div id="raceInfos">
+                  <article id="raceInfoHuman" class="activeRaceInfo grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/human.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Human</h3>
+                      <p>The most common face in Faerûn, humans are known for their tenacity, creativity, and endless capacity for growth.</p>
+                      <!-- No human subraces -->
+                    </div>
+                    <!-- Features -->
                     <div>
-                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
-                      <ul class="flex flex-wrap justify-center gap-2">
-                        <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
-                          <img src="./public/img/races/elf_highelf.webp" alt="High Elf" title="High Elf">
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
                         </li>
-                        <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
-                          <img src="./public/img/races/elf_woodelf.webp" alt="Wood Elf" title="Wood Elf">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/civilmilitiapng.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Civil Militia</strong>: You have Proficiency with Spears, Pikes, Halberds, and Glaives; and Armour Proficiency with Light Armour and Shields.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/humanversatility.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Human Versatility</strong>: You can select an additional skill to be proficient in. Your carrying capacity is also increased by a quarter.</p>
                         </li>
                       </ul>
                     </div>
-                  </div>
-                  
-                  <div>
-                    <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
-                    <ul class="flex flex-col justify-start gap-2">
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/speed.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
-                      </li>
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/elvenweapontraining.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Elven Weapon Training</strong>: You have Proficiency with Longswords, Shortswords, Longbows, and Shortbows.</p>
-                      </li>
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
-                      </li>
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                  </article>
 
-                <div id="raceDrow" class="flex flex-col justify-center items-center gap-6 p-8 border-1 rounded-2xl">
-                  <div class="flex flex-col items-center gap-6">
-                    <div><img src="./public/img/races/drow.webp" alt=""></div>
-                    <h3 class="activeRace font-serif font-bold text-center text-5xl
-                    after:block after:content[''] after:min-w-[200px] md:after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
-                    ">Drow</h3>
-                    <p>Driven to the Underdark, most drow have adopted a ruthless pragmatism. While the Lolth-sworn delight in the goddess' evil tenets, the Seldarine reject Her attempt to overthrow the leader of the elven pantheon.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
-                    <ul class="flex flex-wrap justify-center gap-2">
-                      <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
-                        <img src="./public/img/races/drow_lolthsworn.webp" alt="Lolth-Sworn Drow" title="Lolth-Sworn Drow">
-                      </li>
-                      <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
-                        <img src="./public/img/races/drow_seldarine.webp" alt="Seldarine Drow" title="Seldarine Drow">
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
-                    <ul class="flex flex-col justify-start gap-2">
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/speed.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
-                      </li>
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/drowweapontraining.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Drow Weapon Training</strong>: You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.</p>
-                      </li>
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/superiordarkvision.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Superior Darkvision</strong>: You can see in the dark up to 24m.</p>
-                      </li>
-                      <li class="flex items-center gap-4">
-                        <div class="max-w-[50px] hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
-                          <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
-                        </div>
-                        <p class="text-sm"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
-                      </li>
-                    </ul>
-                  </div>
+                  <article id="raceInfoElf" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/elf.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Elf</h3>
+                      <p>With ethereal countenances and long lifespans, elves are at home with nature's power, flourishing in light and dark alike.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/elf_highelf.webp" alt="High Elf" title="High Elf">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/elf_woodelf.webp" alt="Wood Elf" title="Wood Elf">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/elvenweapontraining.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Elven Weapon Training</strong>: You have Proficiency with Longswords, Shortswords, Longbows, and Shortbows.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoDrow" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/drow.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Drow</h3>
+                      <p>Driven to the Underdark, most drow have adopted a ruthless pragmatism. While the Lolth-sworn delight in the goddess' evil tenets, the Seldarine reject Her attempt to overthrow the leader of the elven pantheon.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/drow_lolthsworn.webp" alt="Lolth-Sworn Drow" title="Lolth-Sworn Drow">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/drow_seldarine.webp" alt="Seldarine Drow" title="Seldarine Drow">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/elvenweapontraining.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Drow Weapon Training</strong>: You have Proficiency with the Rapier, Shortsword, and Hand Crossbow.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/superiordarkvision.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Superior Darkvision</strong>: You can see in the dark up to 24m.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoHalfElf" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/halfelf.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Half-Elf</h3>
+                      <p>Curious, ambitious, and versatile, half-elves are welcome everywhere, but struggle without a community to call their own.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/halfelf_high.webp" alt="High Half-Elf" title="High Half-Elf">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/halfelf_wood.webp" alt="Wood Half-Elf" title="Wood Half-Elf">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/halfelf_drow.webp" alt="Drow Wood Half-Elf" title="Drow Half-Elf">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/civilmilitiapng.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Civil Militia</strong>: You have Proficiency with Spears, Pikes, Halberds, and Glaives; and Armour Proficiency with Light Armour and Shields.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Fey Ancestry</strong>: You have Advantage on Saving Throws against being Charmed, and magic can't put you to sleep.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoHalfOrc" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/halforc.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Half-Orc</h3>
+                      <p>Creatures of intense emotion, half-orcs are more inclined to act than contemplate – whether the rage burning their bodies compels them to fight, or the love filling their hearts inspires acts of incredible kindness.</p>
+                      <!-- No subraces -->
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/relentlessendurance.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Relentless Endurance</strong>: If you reach 0 hit points, you regain 1 hit point instead of becoming Downed.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/feyancestry.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Savage Attacks</strong>: When you land a Critical Hit with a melee weapon attack, you deal an extra die of weapon damage.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoHalfling" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/halfling.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Halfling</h3>
+                      <p>Small yet capable, halflings prefer the comforts of home and hearth – but their natural luck and dexterity makes them fine adventurers.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/halfling_lightfoot.webp" alt="Lightfoot Halfling" title="Lightfoot Halfling">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/halfling_strongheart.webp" alt="Strongheart Halfling" title="Strongheart Halfling">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 7.5m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/lucky.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Lucky</strong>: When you roll for a 1 for an Attack Roll, Ability Check, or Saving Throw, you can reroll the die and must use the new roll result.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/brave.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Brave</strong>: You have Advantage on Saving Throws against being Frightened.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoDwarf" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/dwarf.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Dwarf</h3>
+                      <p>As durable and unyielding as their homes of stone, dwarves are some of the finest warriors, miners, and smiths of Faerûn.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dwarf_gold.webp" alt="Gold Dwarf" title="Gold Dwarf">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dwarf_shield.webp" alt="Shield Dwarf" title="Shield Dwarf">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dwarf_duergar.webp" alt="Duergar" title="Duergar">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 7.5m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/dwarvencombattraining.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Dwarven Combat Training</strong>: You have Proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/dwarvenresilience.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Dwarven Resilience</strong>: You have Advantage on Saving Throws against being Poisoned and you have Resistance against Poison damage.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoGnome" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/gnome.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Gnome</h3>
+                      <p>Small, clever, and energetic, gnomes use their long lives to explore Faerûn's brightest corners and darkest depths.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/gnome_forest.webp" alt="Forest Gnome" title="Forest Gnome">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/gnome_deep.webp" alt="Deep Gnome" title="Deep Gnome">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/gnome_rock.webp" alt="Rock Gnome" title="Rock Gnome">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 7.5m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/gnomecunning.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Gnome Cunning Combat Training</strong>: You have an Advantage on Intelligence, Wisdom, and Charisma Saving Throws.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoTiefling" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/tiefling.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Tiefling</h3>
+                      <p>Descended from devils of the Nine Hells, tieflings face constant suspicion in Faerûn. Thankfully, their arcane abilities make them natural survivors.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/tiefling_asmodeus.webp" alt="Asmodeus Tiefling" title="Asmodeus Tiefling">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/tiefling_mephistopheles.webp" alt="Mephistopheles Tiefling" title="Mephistopheles Tiefling">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/tiefling_zariel.webp" alt="Zariel Tiefling" title="Zariel Tiefling">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/darkvision.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Darkvision</strong>: You can see in the dark up to 12m.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/hellishresistance.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Hellish Resistance</strong>: You have Resistance to Fire damage, taking only half damage from it.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoGithyanki" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/githyanki.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Githyanki</h3>
+                      <p>With a ruthlessness borne from mind flayer enslavement, githyanki ride the Astral Sea atop red dragons, bringing their silver swords and psionic might to bear against any trace of the illithid menace.</p>
+                      <!-- No subraces -->
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/relentlessendurance.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Martial Prodigy</strong>: You have Weapon Proficiency with the Shortsword, Longsword, and Greatsword; and Armour Proficiency with Light and Medium Armour.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="raceInfoDragonborn" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-18 lg:items-center p-8 border-1 rounded-2xl">
+                    <!-- Title + Descr + Subraces -->
+                    <div class="flex flex-col items-center gap-6">
+                      <div class="hover:scale-[1.2] transition-transform ease-in-out"><img src="./public/img/races/dragonborn.webp" alt=""></div>
+                      <h3 class="font-serif font-bold text-center text-5xl
+                      after:block after:content[''] after:min-w-[200px] after:w-[60%] after:h-[2px] after:m-auto after:bg-amber-50 after:mt-4
+                      ">Dragonborn</h3>
+                      <p>A proud race that values clan and skills above all else. Once enslaved by dragons, they strive to be self-sufficient, not wanting to be beholden to anyone, not even the gods.</p>
+                      <div>
+                        <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Subraces</p>
+                        <ul class="flex flex-wrap justify-center gap-2">
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_black.webp" alt="Black Dragonborn" title="Black Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_blue.webp" alt="Blue Dragonborn" title="Blue Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_brass.webp" alt="Brass Dragonborn" title="Brass Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_bronze.webp" alt="Bronze Dragonborn" title="Bronze Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_copper.webp" alt="Copper Dragonborn" title="Copper Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_gold.webp" alt="Gold Dragonborn" title="Gold Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_green.webp" alt="Green Dragonborn" title="Green Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_red.webp" alt="Red Dragonborn" title="Red Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_silver.webp" alt="Silver Dragonborn" title="Silver Dragonborn">
+                          </li>
+                          <li class="flex items-center gap-4 hover:scale-[1.2] transition-transform ease-in-out">
+                            <img src="./public/img/races/dragonborn_white.webp" alt="White Dragonborn" title="White Dragonborn">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Features -->
+                    <div>
+                      <h4 class="font-serif text-2xl font-bold uppercase text-medium text-center pb-4">Race features</h4>
+                      <ul class="flex flex-col justify-start gap-4">
+                        <li class="grid grid-cols-[50px_auto] lg:grid-cols-[75px_auto] items-center gap-4">
+                          <div class="hover:shadow-feature transition-all ease-in-out rounded-xl border-1 border-light hover:border-medium">
+                            <img src="./public/img/races/features/speed.png" class="rounded-xl">
+                          </div>
+                          <p class="text-sm lg:text-lg"><strong>Base Racial Speed</strong>: You can move 9m per turn.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+
                 </div>
             </div>
         </section>
@@ -983,5 +1372,7 @@
             <a href=""><img src="./public/img/dnd.svg" alt="Dungeons & Dragons" class="logo"></a>
         </div>
     </footer>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>

@@ -27,16 +27,25 @@ img {max-width: 100%;}
 
 p + p {margin-top: 1lh;}
 
-/* h1, h2, h3, h4, h5, h6 {margin-bottom: 0.5lh} */
-
-/* a {color: inherit;}
-^ This messes up things, do not use*/
-
 nav details[open] {
-    summary {
-        padding-bottom: 2rem;}
+    summary {padding-bottom: 2rem;}
 }
 
+#raceThumbnails img {
+    opacity: 0.5;
+
+    &.activeRaceThumb {
+        opacity: 1;
+    }
+}
+
+#raceInfos article {
+    display: none;
+
+    &.activeRaceInfo {
+        display: grid;
+    }
+}
 
 
 section#banner {
