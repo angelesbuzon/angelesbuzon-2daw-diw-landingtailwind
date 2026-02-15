@@ -72,7 +72,7 @@ section#races {
 
 section#companions {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../public/img/companions.jpg')
     ;
     background-size: cover;
@@ -89,7 +89,6 @@ section#companions {
                 linear-gradient(rgba(64, 19, 19, 0.8), rgba(64, 19, 19, 0.8)),
                 url('../public/img/characters/astarion_bg.jpg')
             ;
-            background-position: right;
         }
 
         &#gale {
@@ -97,7 +96,6 @@ section#companions {
                 linear-gradient(rgba(19, 35, 61, 0.8), rgba(19, 35, 61, 0.8)),
                 url('../public/img/characters/gale_bg.jpg')
             ;
-            background-position: right;
         }
 
         &#laezel {
@@ -105,7 +103,6 @@ section#companions {
                 linear-gradient(rgba(73, 60, 22, 0.8), rgba(73, 60, 22, 0.8)),
                 url('../public/img/characters/laezel_bg.jpg')
             ;
-            background-position: center;
         }
 
         &#shadowheart {
@@ -113,7 +110,6 @@ section#companions {
                 linear-gradient(rgba(46, 22, 68, 0.8), rgba(46, 22, 68, 0.8)),
                 url('../public/img/characters/shadowheart_bg.jpg')
             ;
-            background-position: right;
         }
 
         &#wyll {
@@ -121,7 +117,6 @@ section#companions {
                 linear-gradient(rgba(11, 45, 21, 0.8), rgba(11, 45, 21, 0.8)),
                 url('../public/img/characters/wyll_bg.jpg')
             ;
-            background-position: right;
         }
 
         &#karlach {
@@ -129,7 +124,6 @@ section#companions {
                 linear-gradient(rgba(73, 32, 20, 0.8), rgba(73, 32, 20, 0.8)),
                 url('../public/img/characters/karlach_bg.jpg')
             ;
-            background-position: right;
         }
     }
 

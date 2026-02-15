@@ -17,7 +17,7 @@
             </div>
             <nav class="rounded-xl p-2 bg-dark">
                 <details class="text-center">
-                    <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform pt-2 pl-2 pr-2 pb-2 text-shadow-md/30">☰</summary>
+                    <summary class="list-none cursor-pointer text-5xl hover:scale-[1.2] ease-in-out transition-transform pt-0 pl-2 pr-2 pb-2 text-shadow-md/30">☰</summary>
                     <ul class="flex flex-col gap-6 p-6">
                         <li><a href="#races" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Races</a></li>
                         <li><a href="#classes" class="hover:text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Classes</a></li>
@@ -31,13 +31,13 @@
     </header>
     <main>
         <section id="banner" class="min-h-[100vh] flex justify-center items-center bg-fixed bg-cover">
-            <div class="mx-2
+            <div class="w-[90%] md:w-fit mx-2
             flex flex-col justify-center gap-6
             text-center
             shadow-mist rounded-[25%] bg-darkish
             ">
                 <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl font-bold text-shadow-lg/20 text-shadow-color-dark">Baldur's Gate&nbsp;3</h1>
-                <p class="font-serif text-3xl font-bold uppercase text-medium">Adventure awaits!</p>
+                <p class="font-serif text-4xl font-bold uppercase text-medium text-shadow-sm/10">Adventure awaits!</p>
                 <div>
                   <a href="#buynow" class="
                     inline-block mt-[14px] lg:mt-0 p-4
@@ -1132,7 +1132,7 @@
             </div>
           </div>
         </section>
-        <section id="companions" class="w-[100%] flex flex-col items-center">
+        <section id="companions" class="w-[100%] flex flex-col items-center overflow-hidden">
             <div class="w-[80%] min-h-[90vh] lg:w-[90%] flex flex-col justify-center items-center py-24">
               <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
               before:block before:content[''] before:min-w-[150px] before:w-[50%] before:h-[3px] before:m-auto before:mb-8 before:bg-light
@@ -1143,11 +1143,11 @@
               </p>
             </div>
 
-            <div id="astarion" class="bg-astarion flex flex-col items-center">
+            <div id="astarion" class="flex flex-col items-center bg-center py-12">
               <div class="w-full lg:w-[90%] py-12 flex flex-col items-center gap-16">
                 <!-- Narrative -->
                 <div id="astarion-narrative" class="flex flex-col lg:flex-row items-center gap-8">
-                  <div class="w-full lg:w-[50%]">
+                  <div id="astarion-portrait" class="w-full lg:w-[50%]">
                     <img src="./public/img/characters/astarion.png" alt="">
                   </div>
                   <div class="w-[90%] lg:w-[50%]">
@@ -1166,7 +1166,7 @@
                   </div>
                 </div>
                 <!-- Gameplay -->
-                <div id="astarion-game" class="w-[90%] border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
+                <div id="astarion-game" class="w-[90%] lg:w-full border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
                   <div id="astarion-game-basic" class="flex flex-wrap gap-x-12 gap-y-4 border-b-1 pb-8 border-b-medium">
                     <div id="astarion-game-basic-class" class="flex gap-4 items-center">
                       <div><img src="./public/img/classes/rogue.webp" alt=""></div>
@@ -1210,7 +1210,7 @@
               </div>
             </div>
 
-            <div id="gale" class="bg-gale flex flex-col items-center">
+            <div id="gale" class="flex flex-col items-center bg-right py-12">
               <div class="w-full lg:w-[90%] py-12 flex flex-col items-center gap-16">
                 <!-- Narrative -->
                 <div id="gale-narrative" class="flex flex-col lg:flex-row items-center gap-8">
@@ -1233,7 +1233,7 @@
                   </div>
                 </div>
                 <!-- Gameplay -->
-                <div id="gale-game" class="w-[90%] border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
+                <div id="gale-game" class="w-[90%] lg:w-full border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
                   <div id="gale-game-basic" class="flex flex-wrap gap-x-12 gap-y-4 border-b-1 pb-8 border-b-medium">
                     <div id="gale-game-basic-class" class="flex gap-4 items-center">
                       <div><img src="./public/img/classes/wizard.webp" alt=""></div>
@@ -1271,7 +1271,7 @@
               </div>
             </div>
 
-            <div id="laezel" class="bg-laezel flex flex-col items-center">
+            <div id="laezel" class="flex flex-col items-center bg-center py-12">
               <div class="w-full lg:w-[90%] py-12 flex flex-col items-center gap-16">
                 <!-- Narrative -->
                 <div id="laezel-narrative" class="flex flex-col lg:flex-row items-center gap-8">
@@ -1291,7 +1291,7 @@
                   </div>
                 </div>
                 <!-- Gameplay -->
-                <div id="laezel-game" class="w-[90%] border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
+                <div id="laezel-game" class="w-[90%] lg:w-full border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
                   <div id="laezel-game-basic" class="flex flex-wrap gap-x-12 gap-y-4 border-b-1 pb-8 border-b-medium">
                     <div id="laezel-game-basic-class" class="flex gap-4 items-center">
                       <div><img src="./public/img/classes/fighter.webp" alt=""></div>
@@ -1329,7 +1329,7 @@
               </div>
             </div>
 
-            <div id="shadowheart" class="bg-shadowheart flex flex-col items-center">
+            <div id="shadowheart" class="flex flex-col items-center bg-center py-12">
               <div class="w-full lg:w-[90%] py-12 flex flex-col items-center gap-16">
                 <!-- Narrative -->
                 <div id="shadowheart-narrative" class="flex flex-col lg:flex-row items-center gap-8">
@@ -1348,7 +1348,7 @@
                   </div>
                 </div>
                 <!-- Gameplay -->
-                <div id="shadowheart-game" class="w-[90%] border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
+                <div id="shadowheart-game" class="w-[90%] lg:w-full border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
                   <div id="shadowheart-game-basic" class="flex flex-wrap gap-x-12 gap-y-4 border-b-1 pb-8 border-b-medium">
                     <div id="shadowheart-game-basic-class" class="flex gap-4 items-center">
                       <div><img src="./public/img/classes/cleric.webp" alt=""></div>
@@ -1392,7 +1392,7 @@
               </div>
             </div>
             
-            <div id="wyll" class="bg-wyll flex flex-col items-center">
+            <div id="wyll" class="flex flex-col items-center bg-top py-12">
               <div class="w-full lg:w-[90%] py-12 flex flex-col items-center gap-16">
                 <!-- Narrative -->
                 <div id="wyll-narrative" class="flex flex-col lg:flex-row items-center gap-8">
@@ -1411,7 +1411,7 @@
                   </div>
                 </div>
                 <!-- Gameplay -->
-                <div id="wyll-game" class="w-[90%] border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
+                <div id="wyll-game" class="w-[90%] lg:w-full border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
                   <div id="wyll-game-basic" class="flex flex-wrap gap-x-12 gap-y-4 border-b-1 pb-8 border-b-medium">
                     <div id="wyll-game-basic-class" class="flex gap-4 items-center">
                       <div><img src="./public/img/classes/warlock.webp" alt=""></div>
@@ -1449,7 +1449,7 @@
               </div>
             </div>
 
-            <div id="karlach" class="bg-karlach flex flex-col items-center">
+            <div id="karlach" class="flex flex-col items-center bg-center py-12">
               <div class="w-full lg:w-[90%] py-12 flex flex-col items-center gap-16">
                 <!-- Narrative -->
                 <div id="karlach-narrative" class="flex flex-col lg:flex-row items-center gap-8">
@@ -1467,7 +1467,7 @@
                   </div>
                 </div>
                 <!-- Gameplay -->
-                <div id="karlach-game" class="w-[90%] border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
+                <div id="karlach-game" class="w-[90%] lg:w-full border-1 rounded-xl p-8 lg:p12 flex flex-col gap-4 bg-dark">
                   <div id="karlach-game-basic" class="flex flex-wrap gap-x-12 gap-y-4 border-b-1 pb-8 border-b-medium">
                     <div id="shadowheart-game-basic-class" class="flex gap-4 items-center">
                       <div><img src="./public/img/classes/barbarian.webp" alt=""></div>
@@ -1573,7 +1573,7 @@
             </div>
         </section>
 
-        <section id="faq" class="w-[100%] flex flex-col items-center py-24">
+        <section id="faq" class="w-[100%] flex flex-col items-center pb-24">
           <div class="w-[80%] lg:w-[90%]">
             <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
             after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
@@ -1692,9 +1692,7 @@
                     </ul>
                   </div>
                 </div>
-                
-                
-            </div>
+              </div>
         </section>
     </main>
     <footer class="w-full flex justify-center pb-12 pt-24 text-sm">
@@ -1712,7 +1710,7 @@
         </div>
         <div id="companies" class="w-full lg:w-[30%]">
           <ul class="flex gap-12 items-center">
-            <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform">
+            <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform ">
               <a href="https://larian.com/"><img src="./public/img/logos/larian.png" alt="Larian Studios" title="Larian Studios"></a>
             </li>
             <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform">

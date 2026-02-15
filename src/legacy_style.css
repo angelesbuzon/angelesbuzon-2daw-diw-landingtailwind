@@ -102,7 +102,7 @@ header {
 
     /* Cambio de opacidad al pasar del banner (no funciona en Firefox): */
     animation: cambiar-header linear both;
-    animation-timeline: scroll(root);
+    animation-timeline: scroll();
     animation-range: 10vh 100vh;
     
     & .centradito {
