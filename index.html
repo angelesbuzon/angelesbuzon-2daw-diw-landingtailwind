@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body class="bg-dark text-light text-xl font-sans">
-    <header class="fixed w-[100%]  top-0 flex justify-center py-6
+    <header class="z-999 fixed w-[100%]  top-0 flex justify-center py-6
      text-xl font-serif uppercase font-bold
      bg-fixed">
         <div class="w-[80%] lg:w-[90%] my-100px mx-auto flex justify-between items-center gap-12">
             <div id="logo" class="w-[200px] hover:scale-[1.2] ease-in-out transition-transform self-start rounded-[25%]">
                 <a href="#">
-                    <img src="./public/img/logo.webp" alt="Baldur's Gate 3">
+                    <img src="./public/img/logos/bg3.webp" alt="Baldur's Gate 3">
                 </a>
             </div>
             <nav class="rounded-xl p-2 bg-dark">
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section id="custom" class="min-h-[80vh] w-[100%] flex justify-center items-center py-24">
+        <section id="custom" class="min-h-[90vh] w-[100%] flex justify-center items-center py-24">
           <div class="w-[80%] lg:w-[90%]flex flex-col justify-center items-center">
             <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
             before:block before:content[''] before:min-w-[150px] before:w-[50%] before:h-[3px] before:m-auto before:mb-8 before:bg-light
@@ -630,7 +630,7 @@
                 </div>
             </div>
         </section>
-        <section id="classes" class="w-[100%] flex justify-center py-12">
+        <section id="classes" class="w-[100%] flex justify-center py-24 pb-42">
           <div class="w-[80%] lg:w-[90%]">
             <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
             ">Choose Your Class</h2>
@@ -1134,7 +1134,7 @@
           </div>
         </section>
         <section id="companions" class="w-[100%] flex flex-col items-center">
-            <div class="w-[80%] min-h-[80vh] lg:w-[90%] flex flex-col justify-center items-center py-24">
+            <div class="w-[80%] min-h-[90vh] lg:w-[90%] flex flex-col justify-center items-center py-24">
               <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
               before:block before:content[''] before:min-w-[150px] before:w-[50%] before:h-[3px] before:m-auto before:mb-8 before:bg-light
               after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
@@ -1653,41 +1653,48 @@
             </div>
           </div>
         </section>
-        <section id="buynow">
-            <div>
-                <div>
-                    <img src="./public/img/buy.png" alt="">
-                </div>
-                <div>
-                    <h2>Buy Now</h2>
-                    <p>
+        <section id="buynow" class="w-[100%] flex flex-col items-center py-24">
+            <div class="w-[80%] lg:w-[90%]">
+                <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
+                after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
+                text-shadow-md/30">Buy Now</h2>
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 justify-center items-center">
+                  <div class="w-full lg:w-[50%] dropping-shadow">
+                      <img src="./public/img/buy.png" class="" alt="Box of the game on a stone with menacing illithid tentacles behind">
+                  </div>
+                  <div class="w-full lg:w-[50%] ">
+                    <p class="text-shadow-sm/50">
                         Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.
                     </p>
-                    <p>
+                    <p class="text-shadow-sm/50">
                         Mysterious abilities are awakening inside you, drawn from a Mind Flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.
                     </p>
-                    <p>
+                    <p class="text-shadow-sm/50">
                         From the creators of Divinity: Original Sin 2 comes a next-generation RPG, set in the world of Dungeons and Dragons.
                     </p>
 
-                    <p>
+                    <p class="font-serif text-2xl font-bold uppercase text-medium py-6 text-shadow-sm/50">
                         Buy Now on selected platform:
                     </p>
-                    <ul>
-                        <li>
-                            <a href=""><img src="" alt="Steam"></a>
+                    <ul class="flex gap-12">
+                      <!-- Icons from https://www.svgrepo.com -->
+                        <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform dropping-shadow">
+                            <a href=""><img src="./public/img/logos/steam.svg" alt="Steam" title="Steam"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="" alt="Gog.com"></a>
+                        <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform dropping-shadow">
+                            <a href=""><img src="./public/img/logos/gog.svg" alt="Gog.com" title="Gog.com"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="" alt="PlayStation 5"></a>
+                        <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform dropping-shadow">
+                            <a href=""><img src="./public/img/logos/ps5.svg" alt="PlayStation 5" title="PlayStation 5"></a>
                         </li>
-                        <li>
-                            <a href=""><img src="" alt="Xbox"></a>
+                        <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform dropping-shadow">
+                            <a href=""><img src="./public/img/logos/xbox.svg" alt="Xbox" title="Xbox"></a>
                         </li>
                     </ul>
+                  </div>
                 </div>
+                
+                
             </div>
         </section>
     </main>

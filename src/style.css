@@ -29,7 +29,8 @@
 /* -------------------------------------
  * Some native CSS I allowed myself to use
  * because it's way more efficient than Tailwind classes for every friggin' HTML tag
- * or because Tailwind does not include some things yet
+ * because Tailwind does not include some things yet
+ * or because some Tailwiind classes do not work.
  * ------------------------------------- */
 
 img {max-width: 100%;}
@@ -37,7 +38,7 @@ img {max-width: 100%;}
 p + p, ul + ul, ul + p {margin-top: 1lh;}
 
 section#banner {
-    /* For some reason, the Tailwind code for background-image didn't work */
+    /* For some reason, the Tailwind code for background-image didn't work (I checked the paths) */
     background-image: url('../public/img/banner.png');
 }
 
@@ -82,7 +83,6 @@ section#companions {
     & > div {
         background-size: cover;
         background-attachment: fixed;
-        background-position: center;
 
         &#astarion {
             background-image:
@@ -105,6 +105,7 @@ section#companions {
                 linear-gradient(rgba(73, 60, 22, 0.8), rgba(73, 60, 22, 0.8)),
                 url('../public/img/characters/laezel_bg.jpg')
             ;
+            background-position: center;
         }
 
         &#shadowheart {
@@ -152,25 +153,42 @@ section#news {
         background-position: center;
 
         &:first-of-type {
-            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/news1.webp');
+            background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/news1.webp');
         }
 
         &:nth-of-type(2) {
-            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public//img/news2.jpg');
+            background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/news2.jpg');
         }
 
         &:nth-of-type(3) {
-            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public//img/news3.jpg');
+            background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/news3.jpg');
         }
 
         &:nth-of-type(4) {
-            background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public//img/news4.webp');
+            background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/news4.webp');
         }
     }
 }
 
 section#faq details[open] {
     summary {margin-bottom:2rem;}
+}
+
+section#buynow {
+    /* For some reason, the Tailwind code for background-image didn't work */
+    background-image: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7)), url('../public/img/city.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.dropping-shadow {
+    /*
+     * Tailwind drop-shadow- classes don't work.
+     * Probably because they include 'backdrop-filter', and browsers only seem to recognize 'filter'
+     */
+    
+    filter: drop-shadow(2px 2px 10px rgb(22, 22, 22));
 }
 
 /*
