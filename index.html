@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body class="bg-dark text-light text-xl font-sans">
-    <header class="z-999 fixed w-[100%]  top-0 flex justify-center py-6
-     text-xl font-serif uppercase font-bold
-     bg-fixed">
+    <header class="z-999 fixed w-[100%] flex justify-center py-6
+     text-xl font-serif uppercase font-bold">
         <div class="w-[80%] lg:w-[90%] my-100px mx-auto flex justify-between items-center gap-12">
             <div id="logo" class="w-[200px] hover:scale-[1.2] ease-in-out transition-transform self-start rounded-[25%]">
                 <a href="#">
@@ -1579,13 +1578,13 @@
             <h2 class="uppercase font-serif text-5xl md:text-6xl font-bold text-center pb-12
             after:block after:content[''] after:min-w-[150px] after:w-[50%] after:h-[3px] after:m-auto after:mt-8 after:bg-light
             text-shadow-md/30">FAQ</h2>
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 2xl:grid-cols-2 gap-8">
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">What platforms is Baldur's Gate 3 available on?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">What platforms is Baldur's Gate 3 available on?</summary>
                 <p class="mt-4">The game is currently available on PC (Steam and GOG), PlayStation 5, Xbox, Mac and GeForce NOW.</p>
               </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">What are the PC system requirements?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">What are the PC system requirements?</summary>
                 <p><strong>Minimum:</strong></p>
                 <ul class="list-inside list-disc">
                   <li>Requires a 64-bit processor and operating system.</li>
@@ -1609,7 +1608,7 @@
                 <p>Make sure your device meets these specifications to ensure smooth gameplay.</p>
               </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">What are the Mac system requirements?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">What are the Mac system requirements?</summary>
                 <p><strong>Minimum:</strong></p>
                 <ul class="list-inside list-disc">
                   <li>OS: macOS 12 or newer</li>
@@ -1631,23 +1630,23 @@
                 <p>Make sure your device meets these specifications to ensure smooth gameplay.</p>
               </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">Are there any in-game purchases?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">Are there any in-game purchases?</summary>
                 <p>No, there are no in-game purchases in our game. We believe in providing a complete and immersive gaming experience without the need for additional purchases. Enjoy the game to its fullest without any additional costs or microtransactions.</p>
               </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">Can I play a single-player campaign?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">Can I play a single-player campaign?</summary>
                 <p>Absolutely! The game features an engaging single-player campaign filled with immersive storytelling and exciting missions. Experience the game's unique narrative as you embark on a solo adventure.</p>
                 </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">Can I play the game offline?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">Can I play the game offline?</summary>
                 <p>Yes, you can play the game offline. However, certain features, such as multiplayer, may require an internet connection.</p>
               </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">Is there a multiplayer mode?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">Is there a multiplayer mode?</summary>
                 <p>Yes, the game offers a multiplayer mode that focuses on cooperative gameplay. You can team up with your friends or other players online and embark on exciting co-op adventures, tackle challenging quests together, and strategise as a team to overcome formidable foes. Experience the game's immersive world in a collaborative multiplayer setting.</p>
               </details>
               <details class="border-1 border-light rounded-2xl p-8 bg-dark">
-                <summary class="font-serif font-bold uppercase text-medium">What does the Digital Deluxe Edition include?</summary>
+                <summary class="cursor-pointer font-serif font-bold uppercase text-medium">What does the Digital Deluxe Edition include?</summary>
                 <p>The Digital Deluxe Edition includes all the content from the standard edition, along with additional exclusive items. These items include the Divinity Bard Song Pack, Exclusive Dice Skin, Mask of the Shapeshifter, Cape of the Red Prince, Lute of the Merryweather Bard, Needle of the Outlaw Rogue, Bicorne of the Sea Beast, Paintings from Rivellon, Adventurer's Pouch, Digital OST (Original Soundtrack), Digital Artbook, and Digital Character Sheets. Immerse yourself fully in the game with these exciting digital bonuses available in the Digital Deluxe Edition.</p>
               </details>
             </div>
@@ -1698,22 +1697,33 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div id="disclaimers">
+    <footer class="w-full flex justify-center pb-12 pt-24 text-sm">
+      <div class="w-[80%] lg:w-[90%] flex flex-col lg:flex-row gap-12 justify-between items-center">
+        <div id="disclaimers" class="w-full lg:w-[50%]">
             <p>
-                <a href="">Privacy Policy</a> | <a href="">Fan Content Policy</a> | <a href="">Cookie Settings</a>
+                <a href="" class="text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Privacy Policy</a> | <a href="" class="text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Fan Content Policy</a> | <a href="" class="text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Cookie Settings</a>
             </p>
             <p>
                 &copy; 2026 Larian Studios. Larian Studios and the Larian Studios logo are registered trademarks of Larian Studios Games Limited affiliates. © 2025 Wizards of the Coast. Wizards of the Coast, Baldur's Gate, Dungeons & Dragons, D&D, Forgotten Realms and their respective logos are registered trademarks of Wizards of the Coast LLC. All rights reserved.
             </p>
             <p>
-                Code and Design: <a href="https://github.com/angelesbuzon">Ángeles Buzón</a>
+                Code and Design: <a href="https://github.com/angelesbuzon" class="text-medium hover:pb-2 hover:border-b-1 hover:border-medium ease-in-out transition-all">Ángeles Buzón</a>
             </p>
         </div>
-        <div id="companies">
-            <a href=""><img src="./public/img/larian.png" alt="Larian Studios" class="logo"></a>
-            <a href=""><img src="./public/img/dnd.svg" alt="Dungeons & Dragons" class="logo"></a>
+        <div id="companies" class="w-full lg:w-[30%]">
+          <ul class="flex gap-12 items-center">
+            <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform">
+              <a href="https://larian.com/"><img src="./public/img/logos/larian.png" alt="Larian Studios" title="Larian Studios"></a>
+            </li>
+            <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform">
+              <a href="https://dnd.wizards.com/"><img src="./public/img/logos/wizards.svg" alt="Wizards of the Coast" title="Wizards of the Coast"></a>
+            </li>
+            <li class="max-w-[150px] hover:scale-[1.2] ease-in-out transition-transform">
+              <a href="https://dnd.wizards.com/"><img src="./public/img/logos/dnd.svg" alt="Dungeons & Dragons" title="Dungeons & Dragons"></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
 
     <script src="./src/main.js"></script>

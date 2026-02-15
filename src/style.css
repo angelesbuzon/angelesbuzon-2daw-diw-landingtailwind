@@ -45,7 +45,7 @@ section#banner {
 section#custom {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('../public/img/play2.jpg')
+        url('../public/img/play.jpg')
     ;
     background-size: cover;
     background-attachment: fixed;
